@@ -201,7 +201,14 @@ button, input {
     align-items: center;
 }
 
-img {
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+}
+
+.img2 {
     width: 100%;
     box-shadow: 0 0 10px hsl(rgba(0, 0, 0, .1));
     margin: 0 auto;
