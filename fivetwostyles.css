@@ -155,6 +155,9 @@ button, input {
 .fx-c {
     flex-direction: column;
 }
+.fx-r {
+    flex-direction: row;
+}
 
 .fx-w {
     flex-wrap: wrap;
@@ -168,10 +171,11 @@ button, input {
     display: inline-flex;
 }
 .form1 {
-    width: 360px;
+    width: 100%;
     height: 404px;
     gap: var(--sp-6);
-    display: grid;
+    display: flex;
+    flex: 1;
 }
 
 .gap2 {
@@ -218,6 +222,13 @@ button, input {
     vertical-align: middle;
 }
 
+.imgb {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+}
+
 .inset0 {
     inset: var(--sp-0);
 }
@@ -243,6 +254,10 @@ input {
 
 .j-center {
     justify-content: center;
+}
+
+.hidden {
+    display: none;
 }
 
 .lab-a {
@@ -301,6 +316,10 @@ letter-spacing: 0;
 
 .m2 {
     margin: var(--sp-2);
+}
+
+.mt-2 {
+    margin-top: var(--sp-2);
 }
 
 .overflow-h {
@@ -367,6 +386,10 @@ svg {
     position: relative;
     display: flex;
 }
+.rel {
+    position: relative;
+}
+
 .rem1 {
     width: 172px;
     height: 20px;
@@ -434,6 +457,18 @@ svg {
     font-size: 20px;
 }
 
+.txt24 {
+    font-size: 24px;
+}
+
+.txt28 {
+    font-size: 28px;
+}
+
+.txt32 {
+    font-size: 32px;
+}
+
 .txt48 {
     font-size: 48px;
 }
@@ -441,10 +476,19 @@ svg {
     font-size: 64px;
 }
 
+.txt-orange {
+    --tw-text-opacity: 1;
+    color: rgb(234 88 12 / var(--tw-text-opacity, 1));
+}
+
 .tran-cols {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .15s;
+}
+
+.tp10 {
+    top: 40px;
 }
 
 .w5 {
@@ -512,62 +556,79 @@ svg {
     --txt-bla60: rgba(0, 0, 0, .6);
 }
 
-@media (min-width: 768px) {
-    .md\:fx-r {
-        flex-direction: row;
+@media (min-width: 1024px) {
+    .md\:hidden {
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
+    .hidden {
+        display: none;
     }
 }
 
-@media (min-width: 768px) {
-    .md\:fx {
-        display: flex;
-    }
-}
-
-@media (min-width: 768px) {
-    .md\:txt13 {
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 768px) {
-    .md\:txt16 {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 768px) {
-    .md\:txt22 {
-        font-size: 22px;
-    }
-}
-
-@media (min-width: 768px) {
-    .md\:txt32 {
-        font-size: 32px;
-    }
-}
-
-@media (min-width: 768px) {
-    .md\:txt56 {
-        font-size: 56px;
-    }
-}
-@media (min-width: 768px) {
-    .md\:txt64 {
-        font-size: 64px;
-    }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .md\:w3 {
         width: 33.333333%;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    .md\:fx-r {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .md\:fx {
+        display: flex;
+    }
+}
+
+@media (min-width: 1024px) {
+    .md\:txt13 {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .md\:txt16 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .md\:txt22 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .md\:txt32 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .md\:txt56 {
+        font-size: 56px;
+    }
+}
+@media (min-width: 1024px) {
+    .md\:txt64 {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 1024px) {
     .md\:w6 {
         width: 66.666667%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:txt24 {
+        font-size: 24px;
     }
 }
     
