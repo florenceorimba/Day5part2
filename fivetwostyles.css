@@ -449,8 +449,16 @@ svg {
     color: var(--txt-bla60);
 }
 
+.txt13 {
+    font-size: 13px;
+}
+
 .txt14 {
     font-size: 14px;
+}
+
+.txt16 {
+    font-size: 16px;
 }
 
 .txt20 {
