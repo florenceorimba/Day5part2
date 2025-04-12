@@ -504,6 +504,7 @@ svg {
     text-align: center;
     display: grid;
     margin: 0;
+    size: 32px;
 }
 
 .w-fit {
